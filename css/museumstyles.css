@@ -1,0 +1,359 @@
+/* Trying the reset first method for these two pages, different from RH & RB websites */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ibarra Real Nova', serif;
+    background-color: #F5F1E8;
+    color: #4A3426;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Typography */
+h1, h2 {
+    font-family: 'Instrument Serif', serif;
+    color: #1A0F08;
+    font-weight: 400;
+}
+
+/* Top navigation */
+.top-nav {
+    text-align: center;
+	font-family: 'Instrument Serif', serif;
+    padding: 2rem 0 1rem 0;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+	color: #1A0F08;
+}
+
+.nav-separator {
+    margin: 0 0.5rem;
+    color: #1A0F08;
+}
+
+/* Main content */
+.main-content {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Hero section - wider width */
+.hero-section {
+    max-width: 1920px;
+    margin: 0 2rem 4rem 2rem;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 5rem;
+    letter-spacing: 0px;
+    margin-bottom: 2.5rem;
+    line-height: 1.2;
+}
+
+.hero-image-container {
+    margin-bottom: 2rem;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Article content - narrower width */
+.article-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content-section {
+    margin-bottom: 3.5rem;
+}
+
+.section-title {
+    font-size: 2.8rem;
+    letter-spacing: 0px;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.body-text {
+    margin-bottom: 1.2rem;
+    line-height: 1.3;
+    font-size: 1.4rem;
+}
+
+.body-text:last-child {
+    margin-bottom: 0;
+}
+
+/* Content image */
+.content-image-container {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.content-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Image placeholder styling - for divs only */
+.image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8A7A6B;
+    font-style: italic;
+    border-radius: 4px;
+    min-height: 200px;
+    background-color: #E5E1D8;
+    border: 2px solid #D0CCC3;
+}
+
+/* Image placeholder styling */
+.image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8A7A6B;
+    font-style: italic;
+    border-radius: 4px;
+    min-height: 200px;
+}
+
+/* Links */
+.inline-link {
+    color: #4A3426;
+    text-decoration: underline;
+    transition: opacity 0.3s ease;
+}
+
+.inline-link:hover{
+    opacity: 0.7;
+}
+
+.contact-email {
+    font-style: italic;
+    color: #6B5B4F;
+}
+
+/* Footer */
+.article-footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid #D0CCC3;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    color: #6B5B4F;
+}
+
+.footer-links {
+    font-size: 1rem;
+}
+
+.footer-link {
+    color: #4A3426;
+    text-decoration: underline;
+    transition: opacity 0.3s ease;
+}
+
+.footer-link:hover {
+    opacity: 0.7;
+}
+
+.footer-separator {
+    margin: 0 0.5rem;
+    color: #6B5B4F;
+}
+
+/* Return navigation - attached to bottom */
+.return-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #F5F1E8;
+    border-top: 1px solid #1A0F08;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.return-link {
+	font-family: 'Instrument Serif', serif;
+    color: #4A3426;
+    text-decoration: none;
+    font-size: 1.7rem;
+    letter-spacing: 0px;
+    transition: opacity 0.3s ease;
+}
+
+.return-link:hover {
+    opacity: 0.7;
+}
+
+/* accounting for fixed return nav bruv */
+body {
+    padding-bottom: 7rem;
+}
+
+/* Responsive goes here */
+/* Responsive goes here */
+/* Responsive goes here */
+/* Responsive goes here */
+
+@media (max-width: 972px) {
+	.hero-section {
+        max-width: 100%;
+		margin: 0 0 2rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+	
+	.top-nav {
+    padding: 2rem 0 1rem 0;
+    font-size: 1rem;
+    }
+	
+	
+    .main-content {
+        padding: 0 1.5rem;
+    }
+    
+    .hero-section {
+        max-width: 100%;
+		margin: 0 0 2rem 0;
+    }
+    
+    .main-title {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .article-content {
+        max-width: 100%;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .body-text {
+        font-size: 1.2rem;
+    }
+    
+    .top-nav {
+        padding: 1.5rem 0 1rem 0;
+        font-size: 0.8rem;
+    }
+    
+    .nav-separator {
+        margin: 0 0.5rem;
+    }
+	
+	.return-nav {
+    padding: 0.8rem 0;
+}
+    
+    .return-link {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content {
+        padding: 0 1rem;
+    }
+    
+    .main-title {
+        font-size: 2.5rem;
+        letter-spacing: 0.5px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .body-text {
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+    
+    .top-nav {
+        font-size: 0.75rem;
+        padding: 1rem 0 0.5rem 0;
+    }
+    
+    .content-section {
+        margin-bottom: 2rem;
+    }
+	
+	.return-nav {
+    padding: 0.7rem 0;
+}
+    
+    .return-link {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .main-title {
+        font-size: 2rem;
+    }
+}
+
+/* iOS Safari optimizations */
+/* iOS Safari optimizations */
+/* iOS Safari optimizations */
+/* iOS Safari optimizations */
+
+body {
+    -webkit-text-size-adjust: 100%; /* Prevents text scaling on orientation change */
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fix iOS Safari viewport issues */
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Improve tap targets for iOS */
+a, button {
+    -webkit-tap-highlight-color: rgba(0,0,0,0.1); /* Custom tap highlight */
+    touch-action: manipulation; /* zoom double-tap disable i think */
+}
+
+/* Smooth scrolling for iOS */
+html {
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Fix fixed positioning issues on iOS Safari */
+.return-nav {
+    -webkit-transform: translateZ(0); /* what is wrong with IOS ???? */
+    transform: translateZ(0);
+}
+
+/* Better image rendering on iOS */
+img {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+}

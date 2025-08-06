@@ -1,0 +1,184 @@
+/* I wrote the tag on the other page, dont care, refer museumstyles Rahil. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ibarra Real Nova', serif;
+    background-color: #1836AF; /* Check figma */
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Corner social links */
+.corner-links {
+    position: fixed;
+    top: 0;
+    left: 50%;
+	transform: translateX(-50%);
+    width: 100vw;
+	max-width:1440px;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 100;
+}
+
+.corner-link {
+    position: absolute;
+    color: white;
+    text-decoration: underline;
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    pointer-events: auto;
+    transition: opacity 0.3s ease;
+}
+
+.corner-link:hover {
+    opacity: 0.7;
+}
+
+.corner-link:visited {
+    color: white;
+}
+
+.top-left {
+    top: 2rem;
+    left: 2rem;
+}
+
+.top-right {
+    top: 2rem;
+    right: 2rem;
+}
+
+.bottom-left {
+    bottom: 2rem;
+    left: 2rem;
+}
+
+.bottom-right {
+    bottom: 2rem;
+    right: 2rem;
+}
+
+/* Main */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 4rem 2rem;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+	max-width: 200px;
+}
+
+.main-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid white;
+}
+
+.title-link,
+.title-link-no {
+    color: white;
+    text-decoration: underline;
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: center;
+    transition: opacity 0.3s ease;
+}
+
+.title-link-no {
+    text-decoration: none;
+}
+
+.title-link:hover {
+    opacity: 0.8;
+}
+
+.title-link:visited {
+    color: white;
+}
+
+/* Responsive */
+/* Responsive */
+/* Responsive */
+
+@media (max-width: 480px) {
+   .image-container {
+	max-width: 160px;
+}
+
+.title-link {
+    font-size: 1.1rem;
+}
+
+.corner-link {
+    font-size: 1.1rem;
+}
+
+.title-link-no {
+    font-size: 1.1rem;
+}
+
+.content-wrapper {
+    gap: 2.0rem;
+}
+
+}
+
+/* iOS Safari optimizations */
+/* iOS Safari optimizations */
+/* iOS Safari optimizations */
+/* iOS Safari optimizations */
+
+body {
+    -webkit-text-size-adjust: 100%; /* Prevents text scaling on orientation change */
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fix iOS Safari viewport issues */
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Improve tap targets for iOS */
+a, button {
+    -webkit-tap-highlight-color: rgba(0,0,0,0.1); /* Custom tap highlight */
+    touch-action: manipulation; /* zoom double-tap disable i think */
+}
+
+/* Smooth scrolling for iOS */
+html {
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Fix fixed positioning issues on iOS Safari */
+.return-nav {
+    -webkit-transform: translateZ(0); /* what is wrong with IOS ???? */
+    transform: translateZ(0);
+}
+
+/* Better image rendering on iOS */
+img {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+}
