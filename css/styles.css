@@ -75,6 +75,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;	
     gap: 2.5rem;
 }
 
@@ -179,5 +180,6 @@ img {
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0);
 }
+
 
 
