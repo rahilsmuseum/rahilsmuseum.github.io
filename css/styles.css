@@ -17,10 +17,8 @@ body {
 .corner-links {
     position: fixed;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     width: 100vw;
-    max-width:1440px;
     height: 100vh;
     pointer-events: none;
     z-index: 100;
@@ -181,4 +179,5 @@ img {
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0);
 }
+
 
