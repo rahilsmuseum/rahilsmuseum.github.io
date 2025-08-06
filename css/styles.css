@@ -8,8 +8,8 @@
 body {
     font-family: 'Ibarra Real Nova', serif;
     background-color: #1836AF; /* Check figma */
-    min-height: 100vh;
-    overflow-x: hidden;
+    height: 100vh;
+    overflow: hidden;
     position: relative;
 }
 
@@ -18,9 +18,9 @@ body {
     position: fixed;
     top: 0;
     left: 50%;
-	transform: translateX(-50%);
+    transform: translateX(-50%);
     width: 100vw;
-	max-width:1440px;
+    max-width:1440px;
     height: 100vh;
     pointer-events: none;
     z-index: 100;
@@ -70,8 +70,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    padding: 4rem 2rem;
+    height: 100vh;
 }
 
 .content-wrapper {
@@ -182,3 +181,4 @@ img {
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0);
 }
+
