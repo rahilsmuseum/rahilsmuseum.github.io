@@ -144,7 +144,7 @@ body {
 }
 
 .main-container {
-        padding: 1.5rem 1rem;
+		transform: translateY(-1%);
     }
 
 }
@@ -187,3 +187,4 @@ img {
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0);
 }
+
