@@ -8,8 +8,8 @@
 body {
     font-family: 'Ibarra Real Nova', serif;
     background-color: #1836AF; /* Check figma */
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    overflow-x: hidden;
     position: relative;
 }
 
@@ -17,8 +17,10 @@ body {
 .corner-links {
     position: fixed;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100vw;
+    max-width:1440px;
     height: 100vh;
     pointer-events: none;
     z-index: 100;
@@ -44,22 +46,22 @@ body {
 }
 
 .top-left {
-    top: 2rem;
+    top: calc(2rem + env(safe-area-inset-top));
     left: 2rem;
 }
 
 .top-right {
-    top: 2rem;
+    top: calc(2rem + env(safe-area-inset-top));
     right: 2rem;
 }
 
 .bottom-left {
-    bottom: 2rem;
+    bottom: calc(2rem + env(safe-area-inset-bottom));
     left: 2rem;
 }
 
 .bottom-right {
-    bottom: 2rem;
+    bottom: calc(2rem + env(safe-area-inset-bottom));
     right: 2rem;
 }
 
@@ -68,14 +70,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+    padding: 2rem;
 }
 
 .content-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;	
     gap: 2.5rem;
 }
 
@@ -132,13 +134,18 @@ body {
     font-size: 1.1rem;
 }
 
+
 .title-link-no {
     font-size: 1.1rem;
 }
 
 .content-wrapper {
-    gap: 2.0rem;
+    gap: 2rem;
 }
+
+.main-container {
+        padding: 1.5rem 1rem;
+    }
 
 }
 
@@ -180,6 +187,3 @@ img {
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0);
 }
-
-
-
