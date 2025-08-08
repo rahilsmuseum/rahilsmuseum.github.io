@@ -48,23 +48,41 @@
     <!-- Corner social links -->
     <div class="corner-links">
         <a href="https://www.linkedin.com/company/rahilsmuseum/" class="corner-link top-left">IN</a>
+		<div class="corner-link top-center local-time" id="local-time"></div>
         <a href="mailto:emailrahilcity@gmail.com" class="corner-link top-right">[@]</a>
-        <a href="https://instagram.com/rahilsmuseum" class="corner-link bottom-left">IG</a>
-        <a href="https://rahilhstatic.github.io" class="corner-link bottom-right">RH</a>
+        <a href="https://rahilhstatic.github.io" class="corner-link bottom-left">RH</a>
+        <a href="https://instagram.com/rahilsmuseum" class="corner-link bottom-right">IG</a>
     </div>
 
     <!-- Main content container -->
     <div class="main-container">
         <div class="content-wrapper">
-            <!-- Main image with yellow bar -->
+            <!-- Main image -->
             <div class="image-container">
                 <img src="main/i1.png" alt="The First Issue" class="main-image">
             </div>
             
-            <!-- Navigation \ Name them after halls or museum rooms -->
+            <!-- Navigation hazard bruv\ best to name them after halls or museum rooms or in that similar line of thinking -->
             <a href="first-issue.html" class="title-link">The First Issue</a>
-			<p href="first-issue.html" class="title-link-no">Artifacts (Coming Soon)</p>
+			<p href="first-issue.html" class="title-link-no">Artifacts (Opening Soon)</p>
         </div>
     </div>
+ <!-- genuinely want to do tru for h12, but have to consder the pm/am sizing, maybe later -->
+	<script>
+function updateTime() {
+    const now = new Date();
+    const timeString = now.toLocaleTimeString([], {
+        hour: '2-digit', 
+        minute: '2-digit',
+		second: '2-digit',
+        hour12: false 
+    });
+    document.getElementById('local-time').textContent = timeString;
+}
+
+updateTime();
+setInterval(updateTime, 1000);
+</script>
+	
 </body>
 </html>
