@@ -117,6 +117,22 @@ body {
     color: white;
 }
 
+.local-time {
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.top-center {
+    top: 2.37rem;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none; 
+    text-decoration: none; 
+}
+
 /* Responsive */
 /* Responsive */
 /* Responsive */
@@ -146,6 +162,14 @@ body {
 .main-container {
 		transform: translateY(-1%);
     }
+
+.local-time {
+font-size: 0.875rem;
+}
+
+.top-center {
+    top: 2.25rem;
+}
 
 }
 
@@ -187,4 +211,5 @@ img {
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0);
 }
+
 
