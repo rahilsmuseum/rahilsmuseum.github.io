@@ -30,15 +30,15 @@ body {
     position: absolute;
     color: white;
     text-decoration: underline;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 400;
     letter-spacing: 0.5px;
     pointer-events: auto;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.2s ease;
 }
 
 .corner-link:hover {
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 .corner-link:visited {
@@ -84,7 +84,7 @@ body {
 .image-container {
     position: relative;
     display: inline-block;
-	max-width: 200px;
+	max-width: 176px;
 }
 
 .main-image {
@@ -98,7 +98,7 @@ body {
 .title-link-no {
     color: white;
     text-decoration: underline;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 300;
     letter-spacing: 1px;
     text-align: center;
@@ -211,5 +211,6 @@ img {
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0);
 }
+
 
 
