@@ -1,4 +1,4 @@
-/* Trying the reset first method for these two pages, different from RH & RB websites */
+/* small edit to push github to start deployment again */
 * {
     margin: 0;
     padding: 0;
@@ -328,4 +328,5 @@ html {
 img {
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0);
+
 }
