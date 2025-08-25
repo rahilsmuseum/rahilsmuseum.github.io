@@ -55,15 +55,41 @@
     <p class="intro-text2">All rights are reserved. No AI is ever used.<br>Enjoy, be inspired.</p>
 
     <div class ="year-divider">
+	<span class="year">pinned</span>
+	<span class="line"></span>
+	</div>	 
+	
+	<!-- Article content1 -->
+        <article class="article-content">
+		
+             <section class="content-section">
+             <div class="slideshow-container" data-interval="2500">
+        <div class="slide active">
+            <img src="ec/hope1.png" alt="Main Hall">
+        </div>
+        <div class="slide">
+            <img src="ec/hope2.png" alt="Writing">
+        </div>
+        <div class="slide">
+            <img src="ec/hope3.png" alt="Exhibition & Artifacts">
+        </div>
+    </div>
+                <p class="body-text">Hope can exists in many colors.</p>
+                <p class="sub-text">C - 2892582337</p>
+            </section>
+		</article>
+		
+		
+	<div class ="year-divider">
 	<span class="year">2025</span>
 	<span class="line"></span>
 	</div>	
 
-        <!-- Article content -->
+        <!-- Article content2 -->
         <article class="article-content">
 		
              <section class="content-section">
-              <div class="slideshow-container">
+              <div class="slideshow-container" data-interval="1500">
         <div class="slide active">
             <img src="ec/sabr.png" alt="Sabr. Patience">
         </div>
@@ -142,24 +168,34 @@
     </main>
 
 	<script>
-let currentSlide = 0;
-        const slides = document.querySelectorAll('.slide');
-        const totalSlides = slides.length;
+function createSlideshow(container) {
+    const slides = container.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+    let currentSlide = 0;
 
-        function showNextSlide() {
-            slides[currentSlide].classList.remove('active');
-            currentSlide = (currentSlide + 1) % totalSlides;
-            slides[currentSlide].classList.add('active');
-        }
+	const interval = parseInt(container.dataset.interval) || 2000;
+	
+    function showNextSlide() {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % totalSlides;
+        slides[currentSlide].classList.add('active');
+    }
 
-        // Change slide every 2 seconds
-        setInterval(showNextSlide, 1500);
+    // Change slide every 2 seconds
+    setInterval(showNextSlide, interval);
+}
+
+// Initialize all slideshows on the page
+document.querySelectorAll('.slideshow-container').forEach(container => {
+    createSlideshow(container);
+});
 </script>
 
 	
 </body>
 
 </html>
+
 
 
 
