@@ -1,4 +1,4 @@
-/* I wrote the tag on the other page, dont care, refer museumstyles Rahil. */
+/* Trying the reset first method for these two pages, different from RH & RB websites */
 * {
     margin: 0;
     padding: 0;
@@ -7,171 +7,150 @@
 
 body {
     font-family: 'Ibarra Real Nova', serif;
-    background-color: #1836AF; /* Check figma */
-    height: 100dvh;
-    overflow: hidden;
-    position: relative;
+    background-color: #1836AF;
+    color: white;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Typography */
+h1, h2 {
+    font-family: 'Ibarra Real Nova', serif;
+    color: #CAD0FF;
+    font-weight: 300;
+	font-size: 1.2rem;
+	font-style: italic;
+	margin-bottom: 0.7rem;
 }
 
 /* Corner social links */
-.corner-links {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100vw;
-    max-width: 1440px;
-    pointer-events: none;
-    z-index: 100;
-}
-
-.corner-link {
-    position: absolute;
-    color: white;
-    text-decoration: underline;
-    font-size: 1.2rem;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    pointer-events: auto;
-    transition: opacity 0.2s ease;
-}
-
-.corner-link:hover {
-    opacity: 0.6;
-}
-
-.corner-link:visited {
-    color: white;
-}
-
-.top-left {
-    top: calc(2rem + env(safe-area-inset-top));
-    left: 2rem;
-}
-
-.top-right {
-    top: calc(2rem + env(safe-area-inset-top));
-    right: 2rem;
-}
-
-.bottom-left {
-    bottom: calc(2rem + env(safe-area-inset-bottom));
-    left: 2rem;
-}
-
-.bottom-right {
-    bottom: calc(2rem + env(safe-area-inset-bottom));
-    right: 2rem;
-}
-
-/* Main */
-.main-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100dvh;
-    padding: 2rem;
-}
-
-.content-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2.5rem;
-}
-
-.image-container {
-    position: relative;
-    display: inline-block;
-	max-width: 176px;
-}
-
-.main-image {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    border: 2px solid white;
-}
-
-.title-link,
-.title-link-no {
-    color: white;
-    text-decoration: underline;
-    font-size: 1.2rem;
-    font-weight: 300;
-    letter-spacing: 1px;
-    text-align: center;
-    transition: opacity 0.3s ease;
-}
-
-.title-link-no {
-    text-decoration: none;
-}
-
-.title-link:hover {
-    opacity: 0.8;
-}
-
-.title-link:visited {
-    color: white;
-}
-
 .local-time {
     color: white;
     font-size: 1rem;
     font-weight: 300;
-    letter-spacing: 0.5px;
-    text-align: center;
+    letter-spacing: 0px;
+	text-align: center;
 }
 
-.top-center {
-    top: 2.37rem;
-    left: 50%;
-    transform: translateX(-50%);
-    pointer-events: none; 
-    text-decoration: none; 
+/* Main content */
+.main-content {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 2rem;
+	margin-top: 2.5rem;
+	margin-bottom: 4rem;
 }
 
-/* Responsive */
-/* Responsive */
-/* Responsive */
+
+.body-text {
+    line-height: 1.3;
+    font-size: 1.2rem;
+	color: #CAD0FF;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	border: 2rem;
+	border-color:white;   
+}
+
+.hero,
+.writing,
+.other,
+.elsewhere {
+	margin-bottom: 2rem;
+}
+
+ul, li {
+	line-height: 1.3;
+    font-size: 1.2rem;
+	color: #CAD0FF;
+	list-style-position: inside;
+}
+
+li {
+margin-bottom: 0.7rem;	
+}
+
+li:last-child {
+	margin-bottom: 0;	
+}
+
+
+/* Links */
+.inline-link {
+	font-size: 1.2rem;
+    text-decoration: underline;
+	color: #F0F2FF;
+    transition: opacity 0.2s ease;
+}
+
+.inline-link:hover{
+    opacity: 0.5;
+}
+
+/* Footer */
+/* Responsive goes here */
+/* Responsive goes here */
+/* Responsive goes here */
+/* Responsive goes here */
+
+@media (max-width: 768px) {
+	
+    .main-content {
+        padding: 0 1.5rem;
+    }
+    
+    .body-text {
+        font-size: 1.2rem;
+    }
+	
+	li{
+		 font-size: 1.2rem;
+	}
+	
+	h1 {
+		 font-size: 1.2rem;
+	}
+	
+	.year{
+	font-size: 1.2rem;
+    }
+	
+	.inline-link {
+	font-size: 1.2rem;
+    }
+	
+}	
 
 @media (max-width: 480px) {
-   .image-container {
-	max-width: 160px;
-}
-
-.title-link {
-    font-size: 1.1rem;
-}
-
-.corner-link {
-    font-size: 1.1rem;
-}
-
-
-.title-link-no {
-    font-size: 1.1rem;
-}
-
-.content-wrapper {
-    gap: 2rem;
-}
-
-.main-container {
-		transform: translateY(-1%);
+    .main-content {
+        padding: 0 1rem;
     }
-
-.local-time {
-font-size: 0.875rem;
+	
+    
+     .body-text {
+        font-size: 1.1rem;
+    }
+	
+	li, h1{
+		 font-size: 1.1rem;
+	}
+	
+	.year{
+	font-size: 1.1rem;
+    }
+	
+	.inline-link {
+	font-size: 1.1rem;
+    }
 }
-
-.top-center {
-    top: 2.25rem;
-}
-
-}
+    
 
 /* iOS Safari optimizations */
 /* iOS Safari optimizations */
@@ -200,17 +179,8 @@ html {
     -webkit-overflow-scrolling: touch;
 }
 
-/* Fix fixed positioning issues on iOS Safari */
-.return-nav {
-    -webkit-transform: translateZ(0); /* what is wrong with IOS ???? */
-    transform: translateZ(0);
-}
-
 /* Better image rendering on iOS */
 img {
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0);
 }
-
-
-
