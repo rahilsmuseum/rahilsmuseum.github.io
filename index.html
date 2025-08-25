@@ -26,7 +26,7 @@
 	<meta property="og:title" content="Rahil's Museum of Digital Artifacts">
 	<meta property="og:description" content="Rahil's Museum of Digital Artifacts - Celebrating authentic human-made design stories by the Last Human Designer in the age of AI">
 	<meta property="og:image" content="preview/previewmain.png">
-	<meta property="og:url" content="https://rahilsmuseum.github.io">
+	<meta property="og:url" content="https://rahilhstatic.github.io">
 	<meta property="og:type" content="website">
 
 	<!-- Twitter Card -->
@@ -38,37 +38,51 @@
 	<!-- iOS Safari optimizations -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="default">
-	<meta name="format-detection" content="telephone=no"> 
+	<meta name="format-detection" content="telephone=no"> <!-- Prevents auto-linking of phone numbers -->
 
 	<!-- Better iOS viewport handling -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
 
 </head>
-<body>
-    <!-- Corner social links -->
-    <div class="corner-links">
-        <a href="https://www.linkedin.com/company/rahilsmuseum/" target="_blank" rel="noopener noreferrer" class="corner-link top-left">IN</a>
-		<div class="corner-link top-center local-time" id="local-time"></div>
-        <a href="mailto:emailrahilcity@gmail.com" class="corner-link top-right">[@]</a>
-        <a href="https://rahilhstatic.github.io/preview/cv.pdf" target="_blank" rel="noopener" download="rahilh_2025_design_cv" class="corner-link bottom-left">CV</a>
-        <a href="https://rahilhstatic.github.io" target="_blank" rel="noopener" class="corner-link bottom-right">RH</a>
-    </div>
+<body id="top">
 
-    <!-- Main content container -->
-    <div class="main-container">
-        <div class="content-wrapper">
-            <!-- Main image -->
-            <div class="image-container">
-                <img src="main/i1.png" alt="The First Issue" class="main-image">
-            </div>
-            
-            <!-- Navigation hazard bruv\ best to name them after halls or museum rooms or in that similar line of thinking. -->
-            <a href="first-issue.html" class="title-link">The First Issue</a>
-			<a href="ec.html" class="title-link">E & C Archive Hall</a>
-			<p href="first-issue.html" class="title-link-no">Artifacts (Opening Soon)</p>
-        </div>
-    </div>
- <!-- genuinely want to do tru for h12, but have to consder the pm/am sizing, maybe later -->
+
+<main class="main-content">
+<div class="corner-link top-center local-time" id="local-time"></div>
+
+			  <section class="hero">
+              <img src="main/b1.png" alt="Ethical Research" class="banner-image">
+              <p class="body-text">Rahil’s Museum of Digital Artifacts is a repository for archiving and exhibiting Rahil Static’s design work, explorations, stories and perspective, it also doubles down as a makeshift design studio presence. </p>
+              </section>
+			  
+			  <section class="writing">
+		      <h1> Writing </h1>
+			  <p><ul>
+			  <li><a href="first-issue.html" class="inline-link">The First Issue</a></li>
+			  </p>
+			  </section>
+			  
+			  <section class="other">
+		      <h1> Departments </h1>
+			  <p><ul>
+			  <li><a href="ec.html" class="inline-link">E & C Archive Hall</a> - Archive of Rahil’s design explorations.</li>
+			  <li>Artifacts - Opening Soon</li>
+			  </p>
+			  </section>
+         
+			  <section class="elsewhere">
+		      <h1> Elsewhere </h1>
+			  <p><ul>
+			  <li><a href="https://rahilhstatic.github.io" target="_blank" rel="noopener" class="inline-link">Rahil's Personal Website</a></li>
+			  <li>RMDA is located in <a href="https://rahilcity.webflow.io" target="_blank" rel="noopener" class="inline-link">Rahil City</a></li>
+			  <li><a href="https://youtube.com/@rahilsmuseum" class="inline-link" target="_blank" rel="noopener">YT</a> // <a href="https://www.linkedin.com/company/rahilsmuseum/" class="inline-link" target="_blank" rel="noopener">IN</a> // <a href="https://rahilhstatic.github.io/preview/cv.pdf" class="inline-link" target="_blank" rel="noopener">CV</a></li>
+			  <li><a href="ec.html" target="_blank" rel="noopener" class="inline-link">emailrahilcity[at]gmail.com</a></li>
+			  </p>
+			  </section>
+			
+		
+    </main>
+	
 	<script>
 function updateTime() {
     const now = new Date();
@@ -76,7 +90,7 @@ function updateTime() {
         hour: '2-digit', 
         minute: '2-digit',
 		second: '2-digit',
-        hour12: false 
+        hour12: false
     });
     document.getElementById('local-time').textContent = timeString;
 }
@@ -84,6 +98,6 @@ function updateTime() {
 updateTime();
 setInterval(updateTime, 1000);
 </script>
-	
+
 </body>
 </html>
