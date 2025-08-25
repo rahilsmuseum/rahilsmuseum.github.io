@@ -189,6 +189,29 @@ h1, h2 {
     color: #313131;
 }
 
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.7rem;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 
 /* Responsive goes here */
 /* Responsive goes here */
@@ -329,6 +352,7 @@ img {
     -webkit-transform: translateZ(0);
 
 }
+
 
 
 
