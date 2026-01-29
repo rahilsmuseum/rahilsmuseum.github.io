@@ -70,7 +70,40 @@
 			  I am making some major changes, the site should resume proper function soon.
 			  </p>
               </section>
-			  
+
+	 <div class="list-header">
+        <div>Name</div>
+        <div>Type</div>
+        <div class="year2">Year</div>
+    </div>
+    
+    <div id="listContainer"></div>
+
+    <script>
+        // PROJECT DATA - Add or remove projects here
+        const projects = [
+			{ client: "Aphorism Series", scope: "Social Media, Graphic Design", year: "2025", url: "stories/aphorism-series.html"},
+        ];
+
+        // Generate List View
+        function generateListView() {
+            const container = document.getElementById('listContainer');
+            container.innerHTML = projects.map(project => `
+                <a href="${project.url}" class="list-item">
+                    <div class="client-name">${project.client}</div>
+                    <div class="scope">${project.scope}</div>
+                    <div class="year2">${project.year}</div>
+                </a>
+            `).join('');
+        }
+
+        // Initialize on page load
+        window.onload = function() {
+            generateListView();
+        };
+    </script>
+	<br>
+	<br>
          
 			  <section class="elsewhere">
 		      <h1> Elsewhere </h1>
