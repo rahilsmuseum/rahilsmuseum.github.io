@@ -134,19 +134,19 @@ li:last-child {
 	
     
      .body-text {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 	
 	li, h1{
-		 font-size: 1.1rem;
+		 font-size: 1rem;
 	}
 	
 	.year{
-	font-size: 1.1rem;
+	font-size: 1rem;
     }
 	
 	.inline-link {
-	font-size: 1.1rem;
+	font-size: 1rem;
     }
 }
     
@@ -183,4 +183,5 @@ img {
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0);
 }
+
 
