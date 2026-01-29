@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Ibarra Real Nova', serif;
+    font-family: "Instrument Sans", sans-serif;
     background-color: #1836AF;
     color: white;
     line-height: 1.6;
@@ -15,7 +15,6 @@ body {
 
 /* Typography */
 h1, h2 {
-    font-family: 'Ibarra Real Nova', serif;
     color: #CAD0FF;
     font-weight: 300;
 	font-size: 1.2rem;
@@ -184,3 +183,4 @@ img {
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0);
 }
+
