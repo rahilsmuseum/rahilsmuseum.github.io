@@ -152,29 +152,29 @@ li:last-child {
     }
     
     .body-text {
-        font-size: 1.1rem;
+        font-size: 1.15rem;
     }
 	
 	li{
-		 font-size: 1.1rem;
+		 font-size: 1.15rem;
 	}
 	
 	h1 {
-		 font-size: 1.1rem;
+		 font-size: 1.15rem;
 	}
 	
 	.year{
-	font-size: 1.1rem;
+	font-size: 1.15rem;
     }
 	
 	.inline-link {
-	font-size: 1.1rem;
+	font-size: 1.15rem;
     }
 
 	.list-header {
                 grid-template-columns: 1.5fr 2fr 0.8fr;
                 gap: 20px;
-                font-size: 1rem;
+                font-size: 1.15rem;
             }
 
             .list-item {
@@ -184,11 +184,11 @@ li:last-child {
             }
 
             .client-name {
-                font-size: 1.1rem;
+                font-size: 1.15rem;
             }
 
             .scope {
-                font-size: 1.1rem;
+                font-size: 1.15rem;
             }
 
             .year2 {
@@ -204,25 +204,25 @@ li:last-child {
 	
     
      .body-text {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 	
 	li, h1{
-		 font-size: 1rem;
+		 font-size: 1.1rem;
 	}
 	
 	.year{
-	font-size: 1rem;
+	font-size: 1.1rem;
     }
 	
 	.inline-link {
-	font-size: 1rem;
+	font-size: 1.1rem;
     }
 
 	.list-header {
                 grid-template-columns: 1.5fr 2fr 0.8fr;
                 gap: 20px;
-                font-size: 0.9rem;
+                font-size: 1rem;
             }
 
             .list-item {
@@ -232,15 +232,15 @@ li:last-child {
             }
 
             .client-name {
-                font-size: 1rem;
+                font-size: 1.1rem;
             }
 
             .scope {
-                font-size: 1rem;
+                font-size: 1.1rem;
             }
 
             .year2 {
-                font-size: 0.9rem;
+                font-size: 1rem;
             }
 }
     
@@ -277,6 +277,7 @@ img {
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0);
 }
+
 
 
 
