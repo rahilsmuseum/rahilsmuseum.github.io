@@ -93,6 +93,48 @@ li:last-child {
     opacity: 0.5;
 }
 
+.list-header {
+            display: grid;
+            grid-template-columns: 2fr 3fr 1fr;
+            gap: 60px;
+            padding: 15px 0;
+            border-bottom: 1px solid #5D78E3;
+            margin-bottom: 0;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+
+        .list-item {
+            display: grid;
+            grid-template-columns: 2fr 3fr 1fr;
+            gap: 60px;
+            padding: 30px 0;
+            border-bottom: 1px solid #2D49BA;
+            transition: background-color 0.2s;
+            cursor: pointer;
+			text-decoration: none;
+			color: inherit;
+        }
+
+        .list-item:hover {
+            background-color: #405BC7;
+        }
+
+        .client-name {
+            font-size: 1.2rem;
+        }
+
+        .scope {
+            color: #CAD0FF;
+            font-size: 1.2rem;
+        }
+
+        .year2 {
+            text-align: right;
+            font-size: 1.2rem;
+        }
+
+
 /* Footer */
 /* Responsive goes here */
 /* Responsive goes here */
@@ -106,24 +148,48 @@ li:last-child {
     }
     
     .body-text {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 	
 	li{
-		 font-size: 1.2rem;
+		 font-size: 1.1rem;
 	}
 	
 	h1 {
-		 font-size: 1.2rem;
+		 font-size: 1.1rem;
 	}
 	
 	.year{
-	font-size: 1.2rem;
+	font-size: 1.1rem;
     }
 	
 	.inline-link {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
     }
+
+	.list-header {
+                grid-template-columns: 1.5fr 2fr 0.8fr;
+                gap: 20px;
+                font-size: 1rem;
+            }
+
+            .list-item {
+                grid-template-columns: 1.5fr 2fr 0.8fr;
+                gap: 20px;
+                padding: 20px 0;
+            }
+
+            .client-name {
+                font-size: 1.1rem;
+            }
+
+            .scope {
+                font-size: 1.1rem;
+            }
+
+            .year2 {
+                font-size: 1rem;
+            }
 	
 }	
 
@@ -148,6 +214,30 @@ li:last-child {
 	.inline-link {
 	font-size: 1rem;
     }
+
+	.list-header {
+                grid-template-columns: 1.5fr 2fr 0.8fr;
+                gap: 20px;
+                font-size: 0.9rem;
+            }
+
+            .list-item {
+                grid-template-columns: 1.5fr 2fr 0.8fr;
+                gap: 20px;
+                padding: 20px 0;
+            }
+
+            .client-name {
+                font-size: 1rem;
+            }
+
+            .scope {
+                font-size: 1rem;
+            }
+
+            .year2 {
+                font-size: 0.9rem;
+            }
 }
     
 
@@ -183,5 +273,6 @@ img {
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0);
 }
+
 
 
