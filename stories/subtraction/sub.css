@@ -1,0 +1,344 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+		
+				@font-face {
+		  font-family: 'Jet';
+		  src: url('fonts/jbmr.ttf') format('truetype');
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		@font-face {
+		  font-family: 'Jet';
+		  src: url('fonts/jbmrit.ttf') format('truetype');
+		  font-weight: normal;
+		  font-style: italic;
+		}
+		
+		@font-face {
+		  font-family: 'Jet';
+		  src: url('fonts/jbmb.ttf') format('truetype');
+		  font-weight: 700;
+		  font-style: bold;
+		}
+		
+		@font-face {
+			font-family: 'GeistPixel';
+			src: url('fonts/gps.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+        body {
+            font-family: "Jet", -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #000000;
+            background: #fff;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+			font-size: 16px;
+			font-weight: 500;
+        }
+
+
+        h1 {
+		font-family: "GeistPixel", serif;
+            font-size: 4rem;
+            font-weight: 500;
+            line-height: 1.1;
+            margin-bottom: 3rem;
+        }
+
+        .meta-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+        }
+
+        .author-meta {
+            display: flex;
+            flex-direction: column;
+            gap: 0.1rem;
+        }
+
+        .author-name {
+            font-weight: 500;
+        }
+
+        .post-meta {
+			font-style: italic;
+        }
+		
+		.author-name,
+		.post-meta {
+		
+			font-size: 1.1rem;
+		}
+
+        .copy-link-btn {
+            background: #000;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+			font-family: "Jet", -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            white-space: nowrap;
+        }
+		
+
+        .copy-link-btn:hover {
+            background: #323232;
+        }
+
+
+        .content {
+                max-width: 680px;
+				margin: 0 auto;
+				padding: 0 2rem;
+				margin-top: 3rem;
+				margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.52;
+            margin-bottom: 1.5rem;
+			font-weight: 500;
+        }
+
+        h2 {
+		    font-family: "Jet", -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+		
+		p,h2,li,span {
+			font-size: 1.1rem;
+			 color: #000;
+		}
+
+        img {
+            width: 100%;
+            max-width: 680px;
+            height: auto;
+            margin-bottom: 3rem;
+            border-radius: 0.8rem;
+			display: block;
+			image-rendering: high-quality;
+        }
+		
+		video {
+            width: 100%;
+            height: auto;
+			object-fit: cover;
+			aspect-ratio: 4/3;
+            margin-bottom: 3rem;
+            border-radius: 0.8rem;
+			display: block;
+			
+        }
+
+        .caption {
+            font-size: 0.875rem;
+            color: #666;
+            text-align: center;
+            margin-top: 0.75rem;
+            line-height: 1.5;
+        }
+		
+		.space{
+			margin-bottom: 2rem;
+		}
+		
+		.space2{
+			margin-bottom: 3rem;
+		}
+
+
+        ul, ol {
+            margin: 1.5rem 0;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            color: #000;
+            line-height: 1.52;
+        }
+
+        ul li {
+            list-style-type: disc;
+        }
+
+        ol li {
+            list-style-type: decimal;
+        }
+		
+		ol {
+			margin-left: 3rem;
+		}
+
+
+        a {
+            color: #000;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #3a3a3a;
+        }
+
+        .section-divider {
+            border: none;
+            border-top: 1px solid #e0e0e0;
+            margin: 3rem 0;
+        }
+		
+		.credits{
+			display: flex;
+			flex-direction: column;
+			gap: 0.5rem;
+		}
+		
+		.credits-row{
+			display: flex;
+			justify-content: space-between;
+		}
+		
+		.credits-row span:first-child{
+			width: 50%;
+			text-align: left;
+		}
+		
+		.credits-row span:last-child{
+			width: 50%;
+			text-align: right;
+		}
+		
+		.email-row span{
+			word-break: break-word;
+			overflow-wrap: break-word;
+		}
+		
+
+	   /* Responsive goes here */
+       /* Responsive goes here */
+       /* Responsive goes here */
+       /* Responsive goes here */
+		
+        @media (max-width: 768px) {
+
+            h1 {
+                font-size: 3.5rem;
+            }
+			
+			ul, ol {
+            padding-left: 1rem;
+            }
+			
+			.author-name,
+			.post-meta {
+			font-size: 1rem;
+			}
+			
+
+            .content {
+                padding: 0 1.5rem;
+				margin-top: 2.5rem;
+				margin-bottom: 2.5rem;
+            }
+
+            p, li, h2, span {
+                font-size: 1rem;
+            }
+        }
+		
+		
+		@media (max-width: 480px) {
+
+            h1 {
+                font-size: 2.5rem;
+            }
+			
+			.author-name,
+			.post-meta {
+			font-size: 1rem;
+			}
+			
+			.copy-link-btn{
+				font-size: 0.9rem;
+				padding: 0.5rem 0.8rem;
+			}
+
+ 
+
+           p, li, h2, span {
+                font-size: 1rem;
+            }
+			
+			 span {
+                font-size: 1rem;
+            }
+        }
+		
+		@media (max-width: 380px) {
+
+            h1 {
+                font-size: 2rem;
+            }
+			
+			 p, li, h2, span {
+                font-size: 0.9rem;
+            }
+        }
+		
+/* iOS Safari optimizations */
+/* iOS Safari optimizations */
+/* iOS Safari optimizations */
+/* iOS Safari optimizations */
+
+body {
+    -webkit-text-size-adjust: 100%; /* Prevents text scaling on orientation change */
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fix iOS Safari viewport issues */
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Improve tap targets for iOS */
+a, button {
+    -webkit-tap-highlight-color: rgba(0,0,0,0.1); /* Custom tap highlight */
+    touch-action: manipulation; /* zoom double-tap disable i think */
+}
+
+/* Smooth scrolling for iOS */
+html {
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Fix fixed positioning issues on iOS Safari */
+.return-nav {
+    -webkit-transform: translateZ(0); /* what is wrong with IOS ???? */
+    transform: translateZ(0);
+}
+
+/* Better image rendering on iOS */
+img {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+}
+
