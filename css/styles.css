@@ -15,7 +15,7 @@ body {
 
 /* Typography */
 h1, h2 {
-    color: #CAD0FF;
+    color: #D6DBFF;
     font-weight: 500;
 	font-size: 1.05rem;
 	font-style: italic;
@@ -50,7 +50,7 @@ b {
     line-height: 1.4;
     font-size: 1.05rem;
 	font-weight: 350;
-	color: #CAD0FF;
+	color: #D6DBFF;
 }
 
 .banner-image {
@@ -88,7 +88,7 @@ b {
 ul, li {
 	line-height: 1.3;
 	font-size: 1.05rem;
-	color: #CAD0FF;
+	color: #D6DBFF;
 	list-style-position: inside;
 }
 
@@ -135,13 +135,13 @@ li:last-child {
         }
 
         .scope {
-            color: #CAD0FF;
+            color: #D6DBFF;
 			font-weight: 350;
             font-size: 1.05rem;
         }
 
         .year2 {
-			color: #CAD0FF;
+			color: #D6DBFF;
 			font-weight: 350;
             text-align: right;
             font-size: 1.05rem;
