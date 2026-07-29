@@ -372,28 +372,28 @@ li:last-child {
 
 @media (max-width: 480px) {
     .main-content {
-        padding: 0 1rem;
+        padding: 0 1.3rem;
     }
 	
     
      .body-text {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
     }
 	
 	.local-time {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
 	}
 	
 	li, h1{
-		 font-size: 0.9rem;
+		 font-size: 0.95rem;
 	}
 	
 	.year{
-	font-size: 0.9rem;
+	font-size: 0.95rem;
     }
 	
 	.inline-link {
-	font-size: 0.9rem;
+	font-size: 0.95rem;
     }
 
             .list-item {
@@ -403,15 +403,15 @@ li:last-child {
             }
 
             .client-name {
-                font-size: 0.9rem;
+                font-size: 0.95rem;
             }
 
             .scope {
-                font-size: 0.9rem;
+                font-size: 0.95rem;
             }
 
             .year2 {
-                font-size: 0.9rem;
+                font-size: 0.95rem;
             }
 			
 						.card {
@@ -440,11 +440,11 @@ li:last-child {
 		  }
 		 
 		  .card__title {
-			font-size: 0.9rem;
+			font-size: 0.95rem;
 		  }
 		 
 		  .card__subtitle {
-			font-size: 0.9rem;
+			font-size: 0.95rem;
 		  }
 		 
 		  /* Icon*/
@@ -455,9 +455,8 @@ li:last-child {
 		  
 		  .footer__row a,
           .footer__row span {
-    font-size: 0.8rem;
-  }
-			
+            font-size: 0.85rem;
+            }	
 }
     
 
