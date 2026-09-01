@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORBIDDEN - A Design Story by Rahil H. Static</title>
+	<meta name="description" content="A series of designs that tell a story... a story about finding yourself. Written and designed by Rahil H. Static." />
+    <meta name="keywords" content="FORBIDDEN, Rahil's Museum, Rahil Static, Rahil H. Static, Rahil City, Rahil HSB, Designer">
+	
+	<!-- Linking Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+	
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" sizes="32x32" href="forbidden/preview/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="forbidden/preview/favicon-16x16.png">
+
+	<!-- Apple -->
+	<link rel="apple-touch-icon" sizes="180x180" href="forbidden/preview/apple-touch-icon.png">
+
+	<!-- Android -->
+	<link rel="icon" type="image/png" sizes="192x192" href="forbidden/preview/icon-192.png">
+	
+
+	<!-- Open Graph (Facebook, LinkedIn, etc.) -->
+	<meta property="og:title" content="FORBIDDEN - A Design Story by Rahil H. Static">
+	<meta property="og:description" content="A series of designs that tell a story... a story about finding yourself. Written and designed by Rahil H. Static.">
+	<meta property="og:image" content="https://rahilsmuseum.github.io/stories/forbidden/preview/previewmain.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:url" content="https://rahilsmuseum.github.io/stories/forbidden">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Rahil's Museum of Digital Artifacts">
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="FORBIDDEN - A Design Story by Rahil H. Static">
+	<meta name="twitter:description" content="A series of designs that tell a story... a story about finding yourself. Written and designed by Rahil H. Static.">
+	<meta name="twitter:image" content="https://rahilsmuseum.github.io/stories/forbidden/preview/previewmain.png">
+
+	<!-- Additional -->
+	<meta property="og:image:alt" content="Preview image card for FORBIDDEN - A Design Story by Rahil H. Static">
+	<meta name="twitter:image:alt" content="Preview image card for FORBIDDEN - A Design Story by Rahil H. Static">
+	
+	
+	<!-- iOS Safari optimizations -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<meta name="format-detection" content="telephone=no"> <!-- Prevents auto-linking of phone numbers -->
+
+	<!-- Better iOS viewport handling -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
+
+<style>
+  /* SAME file css on this one, using base from subtraction, made some obvious changes. just a note - '83 WILL have to be from scratch. -R */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Mono", monospace;
+    background-color: #060606;
+    color: #F7F7F0;
+    line-height: 1.6;
+    font-size: 16px;
+	font-weight: 300;
+}
+
+        h1 {
+		font-family: "DM Mono", monospace;
+            font-size: 3.5rem;
+            font-weight: 400;
+            line-height: 1.1;
+			margin-top: 2rem;
+            margin-bottom: 2rem;
+			font-style: italic;
+        }
+		
+		 h2 {
+		    font-family: "DM Mono", monospace;
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .meta-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+        }
+
+        .author-meta {
+            display: flex;
+            flex-direction: column;
+            gap: 0.1rem;
+        }
+
+        .post-meta {
+			font-style: italic;
+        }
+		
+		.author-name,
+		.post-meta {
+		
+			font-size: 1.1rem;
+		}
+
+        .copy-link-btn {
+            background: #F7F7F0;
+            color: #060606;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+			font-family: "DM Mono", monospace;
+            white-space: nowrap;
+        }
+		
+
+        .copy-link-btn:hover {
+            background: #A6A6A6;
+        }
+
+
+        .content {
+                max-width: 880px;
+				margin: 0 auto;
+				padding: 0 2rem;
+				margin-top: 3rem;
+				margin-bottom: 1rem;
+        }
+
+		p {
+            font-size: 1rem;
+            line-height: 1.52;
+            margin-bottom: 1.5rem;
+			font-weight: 300;
+        }
+		
+		a {
+            color: #F6EE90;
+            text-decoration: none;
+            transition: color 0.2s;
+			
+        }
+
+        a:hover {
+            color: #3a3a3a;
+        }
+		
+		img {
+            width: 100%;
+            max-width: 1200px;
+            height: auto;
+            margin-bottom: 4rem;
+            border-radius: 0.1rem;
+			display: block;
+			image-rendering: high-quality;
+        }
+
+		.space{
+			margin-bottom: 2rem;
+		}
+		
+		.space2{
+			margin-bottom: 3rem;
+		}
+		
+		.credits{
+			display: flex;
+			flex-direction: column;
+			gap: 0.5rem;
+		}
+		
+		.credits-row{
+			display: flex;
+			justify-content: space-between;
+		}
+		
+		.credits-row span:first-child{
+			width: 50%;
+			text-align: left;
+		}
+		
+		.credits-row span:last-child{
+			width: 50%;
+			text-align: right;
+		}
+		
+		.email-row span{
+			word-break: break-word;
+			overflow-wrap: break-word;
+		}
+		
+		
+		/* Responsive goes here */
+       /* Responsive goes here */
+       /* Responsive goes here */
+       /* Responsive goes here */
+		
+        @media (max-width: 768px) {
+
+            h1 {
+                font-size: 3.2rem;
+            }	
+			
+			h2 {
+                font-size: 1.8rem;
+            }	
+			
+			
+			.author-name,
+			.post-meta {
+			font-size: 1rem;
+			}
+			
+
+            .content {
+                padding: 0 1.5rem;
+				margin-top: 2.5rem;
+				margin-bottom: 2.5rem;
+            }
+
+            p, li, span {
+                font-size: 1rem;
+            }
+        }
+		
+		
+		@media (max-width: 480px) {
+
+            h1 {
+                font-size: 2.5rem;
+            }
+			
+			h2 {
+                font-size: 1.6rem;
+            }	
+			
+			.author-name,
+			.post-meta {
+			font-size: 1rem;
+			}
+			
+			.copy-link-btn{
+				font-size: 0.9rem;
+				padding: 0.5rem 0.8rem;
+			}
+
+ 
+
+           p, li, span {
+                font-size: 0.95rem;
+            }
+			
+        }
+		
+		@media (max-width: 420px) {
+		
+		.author-name,
+			.post-meta {
+			font-size: 0.9rem;
+			}
+
+            h1 {
+                font-size: 2rem;
+            }
+			
+			h2 {
+                font-size: 1.2rem;
+            }
+			
+			 p, li, span {
+                font-size: 0.9rem;
+            }
+        }
+		
+
+    
+
+/* iOS Safari optimizations */
+/* iOS Safari optimizations */
+/* iOS Safari optimizations */
+/* iOS Safari optimizations */
+
+body {
+    -webkit-text-size-adjust: 100%; /* Prevents text scaling on orientation change */
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fix iOS Safari viewport issues */
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Improve tap targets for iOS */
+a, button {
+    -webkit-tap-highlight-color: rgba(0,0,0,0.1); /* Custom tap highlight */
+    touch-action: manipulation; /* zoom double-tap disable i think */
+}
+
+/* Smooth scrolling for iOS */
+html {
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Better image rendering on iOS */
+img {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+}
+
+  
+</style>	
+	
+	
+</head>
+<body id="top">
+<img src="forbidden/banner.png" alt="Voices">
+<div class="content">
+
+	<a href="index.html">← Back To Home</a>
+	
+        <h1>FORBIDDEN</h1>
+		
+        <div class="meta-section">
+            <div class="author-meta">
+				<div class="post-meta">a design story</div>
+                <div class="author-name">by Rahil H. Static</div>
+            </div>
+            <button class="copy-link-btn" onclick="copyLink()">Share</button>
+        </div>
+		
+		<p>the following are a set of designs that tell a story.<br>
+a story about second chances.<br>
+written and designed by Rahil H. Static.<br>
+Full credits at the end.<br></p>
+
+<p>disclaimer: the following designs and the story contained within them might be sensitive to some audiences, viewer discretion is advised.</p>
+<br>
+<br>
+
+<img src="forbidden/memory01.png" alt="Voices">
+
+<img src="forbidden/memory02.png" alt="Memories">
+
+<img src="forbidden/memory03.png" alt="Letter">
+
+<img src="forbidden/memory04.png" alt="Tears">
+
+<img src="forbidden/memory05.png" alt="Dreams">
+
+<img src="forbidden/memory06.png" alt="Chance">
+
+<img src="forbidden/memory07.png" alt="Worthless">
+
+<img src="forbidden/memory08.png" alt="Contribution">
+
+<img src="forbidden/memory09.png" alt="Hope">
+
+<img src="forbidden/memory10.png" alt="Perseverance">
+
+<img src="forbidden/memory11.png" alt="Purpose">
+
+<img src="forbidden/memory12.png" alt="Continue">
+
+<h2>CREDITS</h2>
+	<div class="credits space2">
+		<div class="credits-row">
+			<span>STORY</span>
+			<span>RAHIL H. STATIC</span>
+		</div>
+		<div class="credits-row">
+			<span>DESIGN</span>
+			<span>RAHIL H. STATIC</span>
+		</div>
+		<div class="credits-row">
+			<span>WRITING</span>
+			<span>RAHIL H. STATIC</span>
+		</div>
+		<div class="credits-row">
+			<span>PHOTOGRAPHS - M2 & M6</span>
+			<span>RAHIL H. STATIC</span>
+		</div>
+		<div class="credits-row">
+			<span>SKETCH - M5</span>
+			<span>RAHIL H. STATIC</span>
+		</div>
+		<div class="credits-row">
+			<span>IMAGES - M9 & M10</span>
+			<span>WIKIMEDIA</span>
+		</div>
+		<div class="credits-row">
+			<span>DEVELOPMENT</span>
+			<span>RAHIL H. STATIC</span>
+		</div>
+		<div class="credits-row">
+			<span>FONT</span>
+			<span>DM MONO, DM SANS</span>
+		</div>
+		<div class="credits-row">
+			<span>SOFTWARE</span>
+			<span>FIGMA, NOTEPAD++</span>
+		</div>
+	</div>
+	
+	<h2>TIMELINE</h2>
+	<div class="credits space2">
+		<div class="credits-row">
+			<span>MAR’26</span>
+			<span>EARLY CONCEPTS</span>
+		</div>
+		<div class="credits-row">
+			<span>APR - JUN‘26</span>
+			<span>DESIGN + WRITING</span>
+		</div>
+		<div class="credits-row">
+			<span>28 JUN‘26</span>
+			<span>PUBLIC ROLLOUT</span>
+		</div>
+		<div class="credits-row">
+			<span>27 AUG‘26</span>
+			<span>CODING IN NP++</span>
+		</div>
+		<div class="credits-row">
+			<span>1 SEP‘26</span>
+			<span>FINAL DEPLOYMENT</span>
+		</div>
+	</div>
+	
+	<h2>CONTACT</h2>
+	<div class="credits space2">
+		<div class="credits-row email-row">
+			<span>EMAIL</span>
+			<a href="mailto:emailrahilcity@gmail.com"><span style="font-style: italic; text-decoration: underline">EMAIL ME</span></a>
+		</div>
+	</div>
+	
+	<h2>FINAL NOTES</h2>
+		<p style="font-style: italic; margin-bottom: 1rem;">Thank you so much for reading this story. To me this is the best original design work I have done so far... my magnum opus. The idea had been lingering for quite some time. Avant-garde design meets avant-garde storytelling and structure. Modern design to me lacks a certain weight, a certain emotion. 
+		My hope with this project was to see if I could evoke that feeling again, something that makes you pause, think and reflect... something worth the meditation.</p> 
+		<p class="space2" style="font-style: italic;">- Rahil H. Static</p>
+		
+	<h2>LEGAL</h2>
+	<p>THIS WORK IS COPYRIGHTED AND THE PROPERTY OF RAHIL H. STATIC, ANY REPRODUCTION, MODIFICATION OR DISTRIBUTION OF MATERIAL WITHOUT PERMISSION IS STRICTLY PROHIBITED.</p>
+    <p>[C] 2026 RAHIL H. STATIC | ALL RIGHTS RESERVED </p>
+	
+	</div>
+	
+	<img style="width: 100%; max-width: 1920px; margin: 0 auto;" src="forbidden/footer.png" alt="FORBIDDEN FOOTER">
+		
+</main>
+
+
+
+</body>
+</html>
